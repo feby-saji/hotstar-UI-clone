@@ -118,7 +118,6 @@ getLatesetReleaseMovieDetails() async {
       }
       latestReleaseMovies.notifyListeners();
     } catch (e) {
-      print('Error: get latest release $e');
     }
   }
 }
@@ -130,7 +129,7 @@ getMovieDetails() async {
       Uri uri = Uri.parse(
           'https://run.mocky.io/v3/82432a46-66b3-4056-a01c-b813d6cc5b0d');
       var respose = await http.get(uri);
-      // print(respose.body);
+
       var resData = json.decode(respose.body);
 
       allMovies.value.clear();
