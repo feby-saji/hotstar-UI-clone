@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:hotstar/api/getMovieDetails.dart';
 import 'package:hotstar/constants/style.dart';
-import 'package:hotstar/main_page/mainPage.dart';
 import 'package:hotstar/models/lateset_release.dart';
 import 'package:hotstar/models/sports.dart';
 import 'package:hotstar/pages/home/widgets/appbar.dart';
@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _handleScroll() {
     print('initializing scroll');
-    const scrollThreshold = 1; // Adjust this threshold as needed
+    const scrollThreshold = 1;
     final isScrollingDown = _scrollController.position.userScrollDirection ==
         ScrollDirection.forward;
 

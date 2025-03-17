@@ -22,6 +22,7 @@ class HomeImagSliderWidget extends StatelessWidget {
               height: 400,
               child: value.isNotEmpty
                   ? PageView.builder(
+                      itemCount: allMovies.value.length,
                       onPageChanged: (index) {
                         _currentIndex.value = index % allMovies.value.length;
                         _currentIndex.notifyListeners();

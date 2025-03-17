@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotstar/api/getMovieDetails.dart';
 import 'package:hotstar/constants/theme.dart';
 import 'package:hotstar/main_page/mainPage.dart';
 import 'package:hotstar/pages/search/search.dart';
